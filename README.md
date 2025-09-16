@@ -11,6 +11,15 @@ The app is designed to be small, fast, and ergonomic — perfect for homelabbers
 
 ---
 
+## Screenshots
+
+<img width="600" alt="SpeedPing-PingTest1" src="https://github.com/user-attachments/assets/abdab58d-8400-48cb-90f1-a90dbf6f9947" /> 
+<img width="600" alt="SpeedPing-PingTest2" src="https://github.com/user-attachments/assets/1713e719-81c3-46d2-b536-1dd94c4c498c" />
+<img width="600" alt="SpeedPing-Iperf" src="https://github.com/user-attachments/assets/8058cca2-76c8-4480-ba89-920870d67dd8" />
+<img width="600" alt="SpeedPing-Traceroute" src="https://github.com/user-attachments/assets/04e451a3-7c3a-42e9-83b8-faa43650c653" />
+
+---
+
 ## ✨ Features
 
 - **Ping Tab**
