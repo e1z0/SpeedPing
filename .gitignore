@@ -1,0 +1,5 @@
+speedping-*
+.DS_Store
+macdeployqtfix.log
+release
+src/resource.rc

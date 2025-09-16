@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" 
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>CFBundleName</key>
+  <string>SpeedPing</string>
+  <key>CFBundleExecutable</key>
+  <string>speedping</string>
+  <key>CFBundleIdentifier</key>
+  <string>net.e1z0.speedping</string>
+  <key>CFBundleIconFile</key>
+  <string>icon.icns</string>
+  <key>LSMinimumSystemVersion</key>
+  <string>10.13</string>
+  <key>NSHighResolutionCapable</key>
+  <true/>
+  <key>CFBundlePackageType</key>
+  <string>APPL</string>
+  <key>CFBundleSupportedPlatforms</key>
+  <array>
+  <string>MacOSX</string>
+  </array>
+  <key>LSApplicationCategoryType</key>
+  <string>public.app-category.utilities</string>
+  <key>LSMinimumSystemVersion</key>
+  <string>10.11</string>
+</dict>
+</plist>

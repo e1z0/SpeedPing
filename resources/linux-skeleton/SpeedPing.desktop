@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=SpeedPing
+Exec=speedping-linux
+Icon=SpeedPing
+Type=Application
+Categories=Utility;
