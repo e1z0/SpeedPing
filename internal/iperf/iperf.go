@@ -220,6 +220,10 @@ func SelectBinary(binDir string) (string, error) {
 				candidates = append(candidates,
 					filepath.Join(base, "iperf", "iperf3-i386"),
 				)
+			} else if runtime.GOARCH == "arm64" {
+				candidates = append(candidates,
+					filepath.Join(base, "iperf", "iperf3-arm64"),
+				)
 			} else {
 				return "", fmt.Errorf("iperf: no linux binary for GOARCH=%s", runtime.GOARCH)
 			}
