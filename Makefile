@@ -18,6 +18,9 @@ GID ?= $(shell id -g)
 WINDOCKERIMAGE := nulldevil/win64-cross-go1.23-qt5.15-static:latest
 OSXINTELDOCKER := nulldevil/macos-cross-x86_64-sdk13.1-go1.23-qt5.15-dynamic:latest
 OSXARMDOCKER := nulldevil/macos-cross-aarch64-sdk14.5-go1.23-qt5.15-dynamic:latest
+LINUX64DOCKER := nulldevil/qanotherrtsp-linux64-go1.24-qt5.15-dynamic:latest
+LINUXARM64DOCKER := nulldevil/qanotherrtsp-linux-arm64-go1.24-qt5.15-dynamic:latest
+
 #WINDOCKERIMAGE := speedping-win64-cross-go1.23-qt5.15-static:latest
 #OSXINTELDOCKER := speedping-macos-cross-x86_64-sdk13.1-go1.24.3-qt5.15-dynamic:latest
 #OSXARMDOCKER := speedpingp-macos-cross-arm64-sdk13.1-go1.24.3-qt5.15-dynamic:latest
