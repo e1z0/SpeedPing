@@ -225,7 +225,9 @@ release_win: res build_win reldir ## Release build for windows (makes .zip relea
 	@if ! test -f "$(REL_WINDOWS_BIN)"; then echo "Windows binaries not found (required for release target)."; exit 1; fi
 	@if test -f "$(REL_DIR)/$(APP)-Win-x86_64.zip"; then rm -f "$(REL_DIR)/$(APP)-Win-x86_64.zip"; fi
 	@if test -d "$(REL_DIR)/$(APP)"; then rm -rf "$(REL_DIR)/$(APP)"; fi
-	mkdir -p "$(REL_DIR)/$(APP)"
+	mkdir -p "$(REL_DIR)/$(APP)/iperf"
+	@cp iperf/iperf3.exe $(REL_DIR)/$(APP)/iperf/
+	@cp iperf/cygwin1.dll $(REL_DIR)/$(APP)/iperf/
 	mv -f "$(REL_WINDOWS_BIN)" "$(REL_DIR)/$(APP)/$(REL_WINDOWS_BIN)"
 	@# add readme if necessary
 	@#cp -f README.md "$(REL_DIR)/$(APP)/"; \
@@ -235,6 +237,7 @@ release_win32: res build_win32 reldir ## Release build for windows 32 bit (makes
 	@if test -f "$(REL_DIR)/$(APP)-Win-x86.zip"; then rm -f "$(REL_DIR)/$(APP)-Win-x86.zip"; fi
 	@if test -d "$(REL_DIR)/$(APP)"; then rm -rf "$(REL_DIR)/$(APP)"; fi
 	mkdir -p "$(REL_DIR)/$(APP)/iperf"
+	# fix we need i386 binaries, thats x64
 	@cp iperf/iperf3.exe $(REL_DIR)/$(APP)/iperf/
 	@cp iperf/cygwin1.dll $(REL_DIR)/$(APP)/iperf/
 	mv -f "$(REL_WINDOWS_BIN)" "$(REL_DIR)/$(APP)/$(REL_WINDOWS_BIN)"
